@@ -14,6 +14,7 @@
             --accent-color: #ff69b4; /* Rosa más intenso para acentos */
             --header-bg: #ffffff; /* Header blanco como en el mockup */
             --footer-bg: #ffb6c1; /* Footer rosa como en el mockup */
+            --border-color: #ff69b4; /* Color para el borde de la imagen */
         }
         
         * {
@@ -39,7 +40,6 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            border: 2px;
         }
         
         .header-container {
@@ -137,6 +137,7 @@
             margin-bottom: 1rem;
         }
         
+        /* Estilos actualizados para la imagen del mockup */
         .project-image img {
             max-width: 100%;
             height: auto;
@@ -145,8 +146,8 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra más pronunciada */
             transition: transform 0.3s ease;
         }
-
-         .project-image img:hover {
+        
+        .project-image img:hover {
             transform: scale(1.02); /* Efecto de ligero zoom al pasar el cursor */
         }
         
@@ -186,14 +187,14 @@
         footer {
             background-color: var(--footer-bg);
             color: var(--dark-color); /* texto oscuro para el footer rosa */
-            padding: 0.8rem 0;
+            padding: 2rem 0;
             text-align: center;
         }
         
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 0.8rem;
+            padding: 0 2rem;
         }
         
         .footer-content p {
@@ -276,6 +277,12 @@
             }
         }
         
+        /* Barra de navegación rosa como en el mockup */
+        .nav-menu {
+            background-color: var(--primary-color);
+            text-align: center;
+            padding: 0.5rem 0;
+            margin-top: 60px; /* Espacio para el header fijo */
         }
         
         .nav-menu ul {
